@@ -1,0 +1,156 @@
+ .navb{
+    flex-direction: column;
+    height: 140px;
+    margin-bottom: 0;
+}
+.logo img{
+    width: 100px;
+    align-items: center;
+    /* margin: auto; */
+    display: block;
+    
+}
+ .nav{
+    width: 100%;
+    justify-content: stretch;
+    position: relative;
+    left: 0;
+    
+    
+} 
+.navb ul{
+    width: 100%;
+    right: 0;
+    
+}
+.navb ul li a{
+    padding: 0;
+    left: 0;
+    font-size: 1.2rem;
+}
+#img {
+    display: none;
+}
+
+#Title h1{
+   padding-top: 20px;
+   font-size: 2.5rem;
+   
+}
+#Title h3{
+    font-size: 1.25rem;
+}
+#Title p{
+    font-size: 1.2rem;
+    line-height: 10px;
+}
+#Title button{
+    font-size: 1.5rem;
+}
+.item {
+    width: auto;
+}
+.head{
+    padding: 0;
+    margin: 0;
+}
+.head h1{
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+.head p{
+    font-size: 1.05rem;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    grid-template-columns: 1fr;
+}
+.items >p{
+    display: none;
+}
+#recommendation >h1{
+    font-size: 2rem;
+}
+ .card2{
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+@media only screen and (min-width: 590px){
+    .card2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        grid-template-columns: 1fr 1fr;   
+}
+.navb ul{
+    text-align: center;
+    width: fit-content;
+    left: 0;
+    /* margin: auto; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.navb ul li a{
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+.items2 > p{
+    display: none;
+}
+#recommendation > p{
+    font-size: 1rem;
+}
+#recommendation form input{
+    width: 80%;
+}
+
+#review > h1{
+    font-size: 2rem;}
+.review1{
+    float: left;
+    left: 2%;
+    height: 160px;
+    width: 90%;
+    margin: 5px;
+}
+.review1 img{
+    height: 70px;
+    display: none;
+}
+.review1 p{
+    font-size: small;
+}
+.review2{
+    float: left;
+    left: 2%;
+    height: 160px;
+    width: 90%;
+    margin: 5px;
+    align-items: center;
+}
+.review2 img{
+    height: 70px;
+    display: none;
+}
+.review2 p{
+    font-size: small;
+}
+.rfeed h1{
+    margin-top: 1px;
+}
+.feed textarea{
+    width: 80%;
+}
+.fa-facebook{
+        left:5%;
+}   
+ .fa-twitter{
+        left: 35%;
+}
+.fa-instagram{        
+    left:65%;}
