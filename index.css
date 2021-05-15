@@ -1,0 +1,595 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+margin: 0;
+padding: 0;
+font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Tammudu 2', cursive
+}
+.logo img{
+    width: 95px;
+    margin: auto;
+    /* margin: 3px; */
+    filter: invert(100%);
+}
+/*.navb::before{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(251, 250, 248);
+    content: "";
+    width: 100%;
+    height: 75px;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+    border-bottom: .1px solid black;
+}*/
+.navb{
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: 84px;
+    margin-bottom: 10px;
+    border-bottom: .1px solid black;
+    background-color:rgb(251, 250, 248);
+}
+.navb ul{
+   display: flex;
+   position: absolute;
+   right: 5%;
+   /* width: 100%; */
+   /* margin: auto;  */
+}
+.navb ul li {
+    float: right;
+    list-style-type: none;
+    /* padding: 0px 5px; */
+    margin: 0;
+    padding: 2px 5px 0 5px;
+    display:block;
+    
+}
+.navb ul li a{
+    text-decoration: none;
+    color: black;
+    height: 10px;
+    padding: 10px 5px 0px 5px;
+    font-size:1.7rem;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+.navb ul li a:hover{
+    background-color:rgb(84, 180, 84);
+    color: #fff;
+}
+  .navb ul li a:focus{
+    background-color: rgb(250, 250, 250);
+    color: #111;
+  }
+  .navb ul li a:active{
+      text-decoration: underline;
+  }
+ .Home{
+    display:flex;
+    /* flex-wrap: wrap;  */
+    justify-content: center;
+    align-items: center;
+ }
+ .Home p{
+    
+    font-size: 1rem;
+ }
+ .item{ 
+        width: 48%;
+ }
+ #img img{
+    height: 100%;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+
+ }
+ #Title{
+    text-align: center;
+    
+ }
+ #Title h1{
+    text-decoration: underline;
+    margin-bottom: -40px;
+    padding-top: 0;
+    font-size: 4rem;
+    display: inline;    
+ }
+ #Title h3{
+    margin-top: -40px;
+    font-size: 1.5rem;
+ }
+ #Title button{
+    color: #111;
+    background-color: rgb(84, 180, 84) ;
+    font-size: 2rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: .4s;
+    box-shadow: -2px 2px 5px 5px rgb(189, 187, 187);
+ }
+ 
+ #Title button:hover{
+    box-shadow: -2px 2px 5px 7px rgb(250, 246, 246);
+ }
+ #Title button:active{
+    color:#fff;
+ }
+ .head h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: -30px;
+    padding: 0;
+    font-size: 3rem;
+ }
+ .head p{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 0;
+    padding-top: 0;
+ }
+ #speciality{
+    /* background-image: linear-gradient(rgb(165, 160, 160),#fff,rgb(165, 158, 158)); */
+    background-color: rgb(165,160,160);
+
+ }
+
+ .card{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 5px;
+}
+.items{
+   margin: 15px;
+   padding:  0 ;
+   border: 0px solid transparent;
+   text-align: center;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.965);
+   box-shadow: -2px 2px 9px 9px rgb(49, 48, 48);
+   transition-property: box-shadow;
+   transition-duration: .5s;
+}
+.items:hover{
+   box-shadow: -0px 0px 9px 9px transparent;
+   cursor: pointer;
+ }
+.items img{
+   height: 250px;
+   width: 100%;
+   margin: 0;
+   padding:0;
+   border: 0px solid transparent;
+   border-top-left-radius:20px;
+   border-top-right-radius: 20px;
+}
+ .items h1{
+   display: inline;
+   padding:0;
+   margin: 0;
+   font-size: 2rem;
+   text-align: right;
+   text-decoration: underline;
+}
+.items button{
+   float: left;
+   border: 2px solid crimson;
+   border-radius: 20px;
+   cursor: pointer;
+   color: crimson; 
+   margin: 5px;
+   font-size: 1.2rem;
+   padding:5px 8px;
+   font-weight: 600;
+}
+.items button:hover{
+  color: rgb(84, 180, 84);
+   /* text-decoration: underline; */
+   border: 2px solid rgb(84, 180, 84);
+
+}
+.items button:focus{
+  color: rgb(84, 180, 84);
+  /* text-decoration: underline; */
+  border: 2px solid rgb(76, 201, 76);
+  background-color: rgb(192, 182, 182); 
+}
+
+ .price {
+    float: right;
+    padding:0 15px ;
+    margin: 0;
+    font-size: 1.75rem;
+    /* border: 2px solid red; */
+ }
+ .price del{
+    font-size: 1.25rem;
+ }
+ .vegetarianicon{
+    float: right;
+    padding: 0 10px 0 0;
+    font-family:"vegetarian";color:green;
+   }
+ .nonvegetarianicon{
+    float: right;
+    padding: 0 10px 0 0;
+    font-family:"vegetarian";color:rgb(122, 75, 75);
+ }
+ #recommendation h1{
+    text-align: center;
+    text-decoration: underline;  
+    font-size: 3rem;  
+ }
+ #recommendation p{
+    margin-top: -50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+ #recommendation form{
+    display: block;
+    text-align: center;
+    
+ }
+ #recommendation form input{
+    border:2px solid rgb(72, 80, 63); 
+    color: #fff;
+    background-color: rgb(72, 80, 63);
+    height: 35px;
+    width: 19%;
+    margin-top: 10px;
+   border-radius: 20px;
+    margin: 0; 
+    outline: none;
+ } 
+
+ #recommendation form button{
+    border:2px solid rgb(122,124,120);
+    height: 40px;
+    background-color: rgb(122, 124, 120);
+    margin: 0;
+    cursor: pointer;
+    border-radius: 10px;
+ } 
+ #recommendation form button:hover{
+    background-color: rgb(61, 60, 60);
+ }
+
+ .material-icons {
+    height: 10px;
+ }
+ input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 5px;
+ }
+ input{
+    font-size: 20px;
+ }
+ .card2{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-gap: 5px;
+}
+.items2{
+   margin: 15px;
+   padding:  0 ;
+   border: 0px solid transparent;
+   text-align: center;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.965);
+   box-shadow: -2px 2px 9px 9px rgb(170, 167, 167);
+   transition-property: box-shadow;
+   transition-duration: .5s;
+}
+.items2:hover{
+   box-shadow: -0px 0px 9px 9px rgb(245, 242, 242);
+   cursor: pointer;
+ }
+.items2 img{
+   height: 250px;
+   width: 100%;
+   margin: 0;
+   padding:0;
+   border: 0px solid transparent;
+   border-top-left-radius:20px;
+   border-top-right-radius: 20px;
+}
+#recommendation .items2 h1{
+   display: inline;
+   padding:0;
+   margin: 0;
+   font-size: 1.5rem;
+   text-align: right;
+   text-decoration: none;
+}
+.items2 button{
+   float: left;
+   border: 2px solid crimson;
+   border-radius: 20px;
+   cursor: pointer;
+   color: crimson; 
+   margin: 5px;
+   font-size: 1.2rem;
+   padding:5px 8px;
+   font-weight: 600;
+}
+.items2 button:hover{
+  color: rgb(84, 180, 84);
+   /* text-decoration: underline; */
+   border: 2px solid rgb(84, 180, 84);
+
+}
+.items2 button:focus{
+  color: rgb(84, 180, 84);
+  /* text-decoration: underline; */
+  border: 2px solid rgb(76, 201, 76);
+  background-color: rgb(192, 182, 182); 
+}
+#recommendation > .card2 > .items2 > .price p{
+   float: right;
+   padding:0 15px ;
+   margin: 0;
+   font-size: 1.75rem;
+}
+#recommendation > .card2 > .items2 > p{
+   font-size: 1rem;
+   margin-top: 0;
+}
+
+ #review::before{
+    content: "";
+    position: absolute;
+    background-image: url('review.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 150%;
+    z-index: -2;
+    opacity: 0.3;   
+ }
+ #review > h1{
+    font-size: 3rem;
+    color: #111;
+    text-align: center;
+    text-decoration: underline;
+ }
+ .reviewbox{
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    
+ 
+ }
+ .review1{
+    float: left;
+    left: 2%;
+    height: 200px;
+    width: 40%;
+    border: 2px solid black;
+    background-color: #fff;
+    /*transform: skew(-20deg);*/
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    z-index: -1; 
+ }
+ .review1 img{
+    height: 150px;
+    /* float: left; */
+    margin-top: 20px;
+ }
+ .rfeed > h1{
+    /* margin-bottom: 0;
+    padding-bottom: 0;*/
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -30px;
+ }
+ .review1 p{
+    /* float: right; */
+    margin: -20px 0 0 10px;
+ }
+
+ .review2{
+    float: right;
+    left: 51%; 
+    right: 2%;
+    height: 200px;
+    width: 40%;
+    border: 2px solid black;
+    background-color: #fff;
+    /*transform: skew(-20deg);*/
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+ }
+ .review2 img{
+    height: 150px;
+    /* float: left; */
+    margin-top: 20px;
+ }
+ .rfeed h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+ .review2 p{
+    /* float: right; */
+    margin: -20px 0 0 10px;
+ }
+.feed{
+   margin-top:5%;
+    text-align: center;
+    color: #111;
+}
+/* .feed{
+	font-family: 'Baloo 2', cursive;
+	font-size:1.2rem;
+    margin:5px 0 0 0;
+    padding: 5px;
+   
+ }
+  */
+  .feed h1{
+   color: rgb(14, 13, 13);
+   text-decoration: underline;
+  }
+  .feed h4{
+     margin-top: -40px;
+  }
+  .feed input{
+     color: #111;
+     outline: none;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 20px;
+     height: 30px;
+     padding: 0 5px;
+     background-color: transparent;
+  }
+  .feed input::placeholder{
+     color: rgb(72, 78, 72);
+     font-family: 'Baloo Tammudu 2', cursive
+  }
+ .feed textarea{
+	width: 50%;
+   color: #111;
+   background-color: transparent;
+   border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     font-family: 'Baloo Tammudu 2', cursive;
+   outline: none;  
+   padding-left: 10px;
+ }
+ .feed textarea::placeholder{
+   font-family: 'Baloo Tammudu 2', cursive;
+   color: #111; 
+   
+ }
+ .feed button{
+	margin: 10px;
+	outline: none;
+	background-color: rgb(84,180,84);
+	width: 88px;
+	font-size: 1.5rem; 
+	border: 2px solid transparent;
+	border-radius: 20px;
+	font-family: 'Baloo 2', cursive;
+	cursor: pointer;
+   color: #fff;
+   transition-property: box-shadow;
+   transition-duration: .5s;
+   box-shadow: -4px 2px 12px 6px rgb(87, 84, 84); 
+ }
+ .feed button:hover{
+   box-shadow: -0px 0px 9px 9px transparent;
+ }
+ .feed button:active{
+    color: #111;
+ }
+ textarea{
+    font-size: 1rem;
+    font-family: 'Baloo Tammudu 2', cursive
+ }
+ .social::before{
+   content: "";
+   position: absolute;
+   background-image: url('contact.jpg');
+   background-size:cover; 
+   background-repeat: no-repeat; 
+   left: 0;
+   margin: 8px 0 ;
+   padding: 0;
+   width:100%;
+   height: 43%;
+   z-index: -2;
+   opacity: 0.5;
+   /* text-align: center;*/
+    } 
+ .social{
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 171px;
+ }
+ .social h1{
+    padding-top: 20px;
+    text-decoration: underline;
+ }
+ .social ul{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+ }
+ .social ul li a{
+/*     
+   padding: 0 20px; */
+    
+   
+ }
+ .fa{
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      height: auto;
+ }
+ .fa-facebook{
+    /* text-align: center;
+    align-content: center;
+    justify-content: center; */
+     position: absolute;
+     left: 40%;  
+     background: #3B5998;
+     color: white;
+ }
+.fa-twitter{
+    position: absolute;
+   left: 47.5%;  
+  
+
+   background: #55ACEE;
+   color: white;
+ 
+}
+.fa-instagram{
+    position: absolute;
+   left: 55%;  
+   background: #125688;
+   color: white;
+
+}
+.fa:hover{
+   opacity: 0.8;
+}
+footer{
+   text-align: center;
+   background-color: black;
+   color: #fff;
+}
+.foot a{
+   color: #fff;
+   text-decoration: none;
+}
+.foot a:hover{
+   text-decoration: underline;
+}
