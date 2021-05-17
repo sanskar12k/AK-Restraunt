@@ -320,15 +320,14 @@ font-family: 'Baloo Tammudu 2', cursive
   color: rgb(84, 180, 84);
    border: 2px solid rgb(84, 180, 84);
 }
-.items button:focus:after{
+.items2 button:focus:after{
    content: "Added";
    color: rgb(84, 180, 84);
    position: relative;
    left: -20px; 
 }
-.items button:focus{
+.items2 button:focus{
   color: transparent;
-  border: 2px solid rgb(76, 201, 76);
   background-color: rgb(192, 182, 182); 
 }
 #recommendation > .card2 > .items2 > .price p{
