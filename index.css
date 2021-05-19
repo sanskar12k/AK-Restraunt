@@ -384,7 +384,8 @@ font-family: 'Baloo Tammudu 2', cursive
  }
  .review1 img{
     height: 150px;
-    /* float: left; */
+    border: 0px solid transparent;
+    border-radius: 50%;
     margin-top: 20px;
  }
  .rfeed > h1{
@@ -419,7 +420,8 @@ font-family: 'Baloo Tammudu 2', cursive
  }
  .review2 img{
     height: 150px;
-    /* float: left; */
+    border: 0px solid transparent;
+    border-radius: 50%;
     margin-top: 20px;
  }
  .rfeed h1{
